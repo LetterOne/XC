@@ -14,8 +14,8 @@ namespace XC.Library
 
         System.IO.MemoryStream outputstream = new MemoryStream();
         Tamir.SharpSsh.SshStream inputstream = null;
-        Channel channel = null;
-        Session session = null;
+        //Channel channel = null;
+        //Session session = null;
         /// <summary> 
         /// 命令等待标识 
         /// </summary> 
