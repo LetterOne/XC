@@ -4,4 +4,13 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="NPOI">
+      <HintPath>..\..\SSHCheck\SSHCheck\bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="Tamir.SharpSSH">
+      <HintPath>..\..\SSHCheck\SSHCheck\bin\Debug\Tamir.SharpSSH.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
