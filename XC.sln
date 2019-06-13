@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XC.Library", "XC.Library\XC.Library.csproj", "{B4B161D2-CAD5-4C36-B512-6C8676281AEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XC.Library", "XC.Library\XC.Library.csproj", "{B4B161D2-CAD5-4C36-B512-6C8676281AEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XC.Web", "XC.Web\XC.Web.csproj", "{55766021-3918-4B0F-87AF-65B24E06570F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XC.Home", "XC.Home\XC.Home.csproj", "{22C1C860-9360-46CE-949C-298433AA87DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XC.Web", "XC.Web\XC.Web.csproj", "{55766021-3918-4B0F-87AF-65B24E06570F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{55766021-3918-4B0F-87AF-65B24E06570F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55766021-3918-4B0F-87AF-65B24E06570F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55766021-3918-4B0F-87AF-65B24E06570F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{22C1C860-9360-46CE-949C-298433AA87DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22C1C860-9360-46CE-949C-298433AA87DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22C1C860-9360-46CE-949C-298433AA87DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22C1C860-9360-46CE-949C-298433AA87DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
