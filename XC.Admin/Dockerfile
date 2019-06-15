@@ -3,21 +3,21 @@
 
 FROM microsoft/dotnet:2.1-aspnetcore-runtime-nanoserver-1803 AS base
 WORKDIR /app
-EXPOSE 64603
-EXPOSE 44306
+EXPOSE 51077
+EXPOSE 44346
 
 FROM microsoft/dotnet:2.1-sdk-nanoserver-1803 AS build
 WORKDIR /src
-COPY ["XC.Home/XC.Home.csproj", "XC.Home/"]
-RUN dotnet restore "XC.Home/XC.Home.csproj"
+COPY ["XC.Admin/XC.Admin.csproj", "XC.Admin/"]
+RUN dotnet restore "XC.Admin/XC.Admin.csproj"
 COPY . .
-WORKDIR "/src/XC.Home"
-RUN dotnet build "XC.Home.csproj" -c Release -o /app
+WORKDIR "/src/XC.Admin"
+RUN dotnet build "XC.Admin.csproj" -c Release -o /app
 
 FROM build AS publish
-RUN dotnet publish "XC.Home.csproj" -c Release -o /app
+RUN dotnet publish "XC.Admin.csproj" -c Release -o /app
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "XC.Home.dll"]
+ENTRYPOINT ["dotnet", "XC.Admin.dll"]

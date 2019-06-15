@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:64603",
-      "sslPort": 44306
+      "applicationUrl": "http://localhost:51077",
+      "sslPort": 44346
     }
   },
   "profiles": {
@@ -13,10 +13,9 @@
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "use64Bit": true
+      }
     },
-    "XC.Home": {
+    "XC.Admin": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
