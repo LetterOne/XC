@@ -35,7 +35,7 @@ namespace XC.Library
                 ////Redirect standard I/O to the SSHchannel 
                 inputstream = new Tamir.SharpSsh.SshStream(host, username, pwd);
                 ///我手动加进去的方法。。为了读取输出信息 
-                inputstream.set_OutputStream(outputstream);
+                //inputstream.se(outputstream);
                 return inputstream != null;
             }
             catch { throw; }

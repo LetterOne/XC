@@ -7,9 +7,6 @@ namespace XC.ConsoleApp
 {
    public static class MultiThreadTest
     {
-        static Thread M = null;
-        static Thread SubA = null;
-        static Thread SubB = null;
         static List<int> CacheA = new List<int>();
         static List<int> CacheB = new List<int>();
         static void Thread_Main()

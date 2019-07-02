@@ -6,17 +6,18 @@
 
   <ItemGroup>
     <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.19.3" />
+    <PackageReference Include="Polly" Version="7.1.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="5.1.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.0.601" />
+    <PackageReference Include="Tamir.SSH.dll" Version="1.1.1.15" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Microsoft.IdentityModel.Protocols">
       <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.identitymodel.protocols\5.2.0\lib\netstandard1.4\Microsoft.IdentityModel.Protocols.dll</HintPath>
     </Reference>
-    <Reference Include="NPOI">
-      <HintPath>..\..\SSHCheck\SSHCheck\bin\Debug\NPOI.dll</HintPath>
-    </Reference>
-    <Reference Include="Tamir.SharpSSH">
-      <HintPath>..\..\SSHCheck\SSHCheck\bin\Debug\Tamir.SharpSSH.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
 
