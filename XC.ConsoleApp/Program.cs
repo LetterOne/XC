@@ -1,5 +1,7 @@
-﻿using System;
+﻿using RabbitMQ.Client;
+using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Threading;
 
 namespace XC.ConsoleApp
@@ -13,13 +15,40 @@ namespace XC.ConsoleApp
         static List<int> CacheB = new List<int>();
         static void Main(string[] args)
         {
-            M = new Thread(new ThreadStart(Thread_Main));
-            SubA = new Thread(new ThreadStart(Thread_SubA));
-            SubB = new Thread(new ThreadStart(Thread_SubB));
-            M.Start();
-            SubA.Start();
-            SubB.Start();
-            Console.Read();
+            //M = new Thread(new ThreadStart(Thread_Main));
+            //SubA = new Thread(new ThreadStart(Thread_SubA));
+            //SubB = new Thread(new ThreadStart(Thread_SubB));
+            //M.Start();
+            //SubA.Start();
+            //SubB.Start();
+            //Console.Read();
+
+            var factory = new ConnectionFactory() { HostName = "localhost" };
+            for (int i = 0; i < 10; i++)
+            {
+                using (var connection = factory.CreateConnection())
+                using (var channel = connection.CreateModel())
+                {
+                    channel.QueueDeclare(queue: "hello",
+                                         durable: false,
+                                         exclusive: false,
+                                         autoDelete: false,
+                                         arguments: null);
+
+                    string message = "Hello World!";
+                    var body = Encoding.UTF8.GetBytes(message);
+
+                    channel.BasicPublish(exchange: "",
+                                         routingKey: "hello",
+                                         basicProperties: null,
+                                         body: body);
+                    Console.WriteLine(" [x] Sent {0}", message);
+                    Thread.Sleep(1000);
+                }
+
+                Console.WriteLine(" Press [enter] to exit.");   
+            }
+            Console.ReadLine();
         }
         static void Thread_Main()
         {

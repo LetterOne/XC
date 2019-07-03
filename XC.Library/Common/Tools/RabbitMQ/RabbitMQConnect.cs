@@ -11,9 +11,9 @@ namespace XC.Library.Common.Tools.RabbitMQ
 {
    public  class RabbitMQConnect
     {
-        static string host = "127.0.0.1";
-        static string UserName = "H";
-        static string password = "H";
+        static string host = "localhost";
+        static string UserName = "guest";
+        static string password = "guest";
 
         public readonly static IConnectionFactory _connectionFactory;
         IConnection _connection;
@@ -21,11 +21,6 @@ namespace XC.Library.Common.Tools.RabbitMQ
         bool _disposed;
         static RabbitMQConnect()
         {
-            //if (host == "localhost")
-            //{
-            //    _connectionFactory = new ConnectionFactory() { HostName = host };
-            //}
-            //else
             {
                 _connectionFactory = new ConnectionFactory() { HostName = host, UserName = UserName, Password = password };
             }
