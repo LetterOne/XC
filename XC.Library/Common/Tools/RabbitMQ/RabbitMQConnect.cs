@@ -26,6 +26,7 @@ namespace XC.Library.Common.Tools.RabbitMQ
             }
         }
         public bool IsConnected => this._connection != null && this._connection.IsOpen && this._disposed;
+
         public IModel CreateModel()
         {
             if (!this.IsConnected)

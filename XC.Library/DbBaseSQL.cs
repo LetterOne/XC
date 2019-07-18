@@ -14,7 +14,7 @@ namespace XC.Library
         /// <summary>
         /// 连接数据库的字符串
         /// </summary>
-        public static string connectionString = "";// ConfigurationManager.ConnectionStrings["DataBaseConnec"].ConnectionString;
+        public static string connectionString = "";//ConfigurationManager.ConnectionStrings["DataBaseConnec"].ConnectionString;
         /// <summary>
         /// 连接数据库的方法
         /// </summary>
