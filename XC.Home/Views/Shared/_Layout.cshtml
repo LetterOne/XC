@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - XC.Home</title>
-
+    <title>@ViewData["Title"] - 上海狂鲨达建材有限公司</title>
+    @RenderSection("_Links", required: false)
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
@@ -43,9 +43,7 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2019 - XC.Home</p>
-        </footer>
+
     </div>
 
     <environment include="Development">
@@ -68,7 +66,7 @@
         </script>
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
-
-    @RenderSection("Scripts", required: false)
+    @RenderSection("Shared/_Footer", required: false)
+    @RenderSection("Shared/Scripts", required: false)
 </body>
 </html>

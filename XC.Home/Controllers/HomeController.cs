@@ -17,14 +17,14 @@ namespace XC.Home.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "上海狂鲨达建材有限公司.";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "联系方式.";
 
             return View();
         }
