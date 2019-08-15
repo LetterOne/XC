@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XC.ConsoleRecvApp", "XC.Con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XC.WebAPI", "XC.WebAPI\XC.WebAPI.csproj", "{BD81CE44-E59B-4B1C-A06D-6FB21F9A8360}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XC.Web", "XC.Web\XC.Web.csproj", "{EEC7AF4F-0B6C-4D68-B87D-110272841D06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XC.Home", "XC.Home\XC.Home.csproj", "{22EEEB40-C4B1-453A-A6C5-44D673EF90FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{BD81CE44-E59B-4B1C-A06D-6FB21F9A8360}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD81CE44-E59B-4B1C-A06D-6FB21F9A8360}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD81CE44-E59B-4B1C-A06D-6FB21F9A8360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEC7AF4F-0B6C-4D68-B87D-110272841D06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC7AF4F-0B6C-4D68-B87D-110272841D06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC7AF4F-0B6C-4D68-B87D-110272841D06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC7AF4F-0B6C-4D68-B87D-110272841D06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22EEEB40-C4B1-453A-A6C5-44D673EF90FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22EEEB40-C4B1-453A-A6C5-44D673EF90FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22EEEB40-C4B1-453A-A6C5-44D673EF90FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22EEEB40-C4B1-453A-A6C5-44D673EF90FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
