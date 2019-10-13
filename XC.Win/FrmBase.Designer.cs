@@ -32,8 +32,10 @@
             // 
             // FrmBase
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.ClientSize = new System.Drawing.Size(830, 632);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.ClientSize = new System.Drawing.Size(1107, 1053);
+            this.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmBase";
             this.ResumeLayout(false);
 
