@@ -8,9 +8,8 @@ namespace XC.ConsoleApp
 {
     class Program
     {
-        static Thread M = null;
-        static Thread SubA = null;
-        static Thread SubB = null;
+      
+
         static List<int> CacheA = new List<int>();
         static List<int> CacheB = new List<int>();
         static void Main(string[] args)

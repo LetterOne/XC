@@ -1,7 +1,194 @@
 ﻿@{
-    ViewData["Title"] = "About";
+    ViewData["Title"] = "关于我们";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+<!-- Start Page Header area -->
+<div id="mu-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mu-page-header-area">
+                    <h1 class="mu-page-header-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<p>Use this area to provide additional information.</p>
+<!-- End Page Header area -->
+<!-- Start Breadcrumb -->
+<div id="mu-breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb" role="navigation">
+                    <ol class="breadcrumb mu-breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">主页</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">关于我们</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumb -->
+<!-- Start main content -->
+<main>
+    <!-- Start About -->
+    <section id="mu-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-about-area">
+                        <!-- Title -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mu-title">
+                                    <h2>公司介绍</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Start Feature Content -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mu-about-left">
+                                    <img class="" src="@Url.Content("~/assets/images/about-us.jpg")" alt="img">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mu-about-right">
+                                    <ul>
+                                        <li>
+                                            <h3>公司简介</h3>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;@ViewData["AboutCompany"]</p>
+                                        </li>
+                                        <li>
+                                            <h3>公司产品</h3>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;@ViewData["AboutProduct"]</p>
+                                        </li>
+                                        <li>
+                                            <h3>公司客户</h3>
+                                            <p>&nbsp;&nbsp;&nbsp;&nbsp;@ViewData["AboutCustomer"]</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Feature Content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
+    <!-- Start Team -->
+    <section id="mu-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-team-area">
+                        <!-- Title -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mu-title">
+                                    <h2>公司成员</h2>
+                                    <p>以下是我们公司的主要成员。我们有一批核心团队负责公司产品的生产、销售、物流、管理、客户维护等工作。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Start Team Content -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mu-team-content">
+                                    <div class="row">
+                                        <!-- start single item -->
+                                        <div class="col-md-6">
+                                            <div class="mu-single-team">
+                                                <div class="mu-single-team-img">
+                                                    <img src="@Url.Content("~/assets/images/team-member.jpg")" alt="img">
+                                                </div>
+                                                <div class="mu-single-team-content">
+                                                    <h3>沙经理</h3>
+                                                    <span>公司经理</span>
+                                                    <p>负责公司的生产、销售、等工作。联系电话：19901712625</p>
+                                                    <ul class="mu-team-social">
+                                                        <li><a href="#"><i class="fa fa-weixin" style="color:green" title="微信"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-qq" title="QQ"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-phone" title="联系电话："></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End single item -->
+                                        <!-- start single item -->
+                                        <div class="col-md-6">
+                                            <div class="mu-single-team">
+                                                <div class="mu-single-team-img">
+                                                    <img src="@Url.Content("~/assets/images/team-member.jpg")" alt="img">
+                                                </div>
+                                                <div class="mu-single-team-content">
+                                                    <h3>沈经理</h3>
+                                                    <span>公司经理</span>
+                                                    <p>负责公司产品的市场推广、销售、渠道联系等工作</p>
+                                                    <ul class="mu-team-social">
+                                                        <li><a href="#"><i class="fa fa-weixin" style="color:green" title="微信"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-qq" title="QQ"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-phone" title="联系电话："></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End single item -->
+                                        <!-- start single item -->
+                                        <div class="col-md-6">
+                                            <div class="mu-single-team">
+                                                <div class="mu-single-team-img">
+                                                    <img src="@Url.Content("~/assets/images/team-member.jpg")" alt="img">
+                                                </div>
+                                                <div class="mu-single-team-content">
+                                                    <h3>沈女士</h3>
+                                                    <span>公司员工</span>
+                                                    <p>负责公司的销售等工作</p>
+                                                    <ul class="mu-team-social">
+                                                        <li><a href="#"><i class="fa fa-weixin" style="color:green" title="微信"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-qq" title="QQ"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-phone" title="联系电话："></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End single item -->
+                                        <!-- start single item -->
+                                        <div class="col-md-6">
+                                            <div class="mu-single-team">
+                                                <div class="mu-single-team-img">
+                                                    <img src="@Url.Content("~/assets/images/team-member.jpg")" alt="img">
+                                                </div>
+                                                <div class="mu-single-team-content">
+                                                    <h3>沙先生</h3>
+                                                    <span>公司员工</span>
+                                                    <p>负责公司的物流、送货等工作。</p>
+                                                    <ul class="mu-team-social">
+                                                        <li><a href="#"><i class="fa fa-weixin" style="color:green" title="微信"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-qq" title="QQ"></i></a></li>
+                                                        <li><a href="#"><i class="fa fa-phone" title="联系电话："></i></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End single item -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- End Team Content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Team -->
+
+</main>
+
+<!-- End main content -->

@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewData["Title"] = "施工方式";
+
+}
+
+<!-- Start Page Header area -->
+<div id="mu-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mu-page-header-area">
+                    @*<h1 class="mu-page-header-title">施工方式</h1>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Header area -->
+<!-- Start Breadcrumb -->
+<div id="mu-breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb" role="navigation">
+                    <ol class="breadcrumb mu-breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">主页</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">施工方式</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumb -->
+<!-- Start main content -->
+<main>
+
+    <!-- Start Portfolio -->
+    <section id="mu-portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-portfolio-area">
+                        <!-- Title -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mu-title">
+                                    <h2>施工方式</h2>
+                                    <p>这里主要给大家介绍下经纬达美缝剂的使用时的施工方式</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <!-- Start Portfolio Filter -->
+                            <div class="mu-portfolio-filter-area">
+                                <ul class="mu-simplefilter">
+                                    <li class="active" data-filter="all">全部<span>/</span></li>
+                                    <li data-filter="1">施工用量<span>/</span> </li>
+                                    <li data-filter="2">施工前准备工作<span>/</span></li>
+                                    <li data-filter="3">压缝球施工方法<span>/</span></li>
+                                    <li data-filter="4">美纹纸施工方法<span>/</span> </li>
+                                    <li data-filter="5">注意事项</li>
+                                </ul>
+                            </div>
+
+                            <!-- Start Portfolio Content -->
+                            <div class="mu-portfolio-content">
+                                <div class="filtr-container">
+                                    <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="1">
+                                        <a class="mu-imglink" href="@Url.Content("~/assets/images/施工用量表.jpg")" title="施工用量表">
+                                            <img class="img-responsive" src="@Url.Content("~/assets/images/施工用量表.jpg")" alt="image">
+                                            <div class="mu-filter-item-content">
+                                                <h4 class="mu-filter-item-title">注意:以上用量是计算出的参考用量。具体施工中会因为缝隙的深宽度、浪费程度</h4>
+                                                <span class="fa fa-long-arrow-right"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="2">
+                                        <a class="mu-imglink" href="@Url.Content("~/assets/images/施工前准备.jpg")" title="施工前准备">
+                                            <img class="img-responsive" src="@Url.Content("~/assets/images/施工前准备.jpg")" alt="image">
+                                            <div class="mu-filter-item-content">
+                                                <h4 class="mu-filter-item-title">施工前:上海经纬达柔性真瓷胶施工前需保障缝隙中无油渍、无浮尘等杂物,保障缝隙无水分。本产品施工使用和储存温度均在5-40℃为宜,避免存放于高温或者太阳直射处,需放置在儿童触及不到的地方。</h4>
+                                                <span class="fa fa-long-arrow-right"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="3">
+                                        <a class="mu-imglink" href="@Url.Content("~/assets/images/压缝球施工.jpg")" title="压缝球施工法">
+                                            <img class="img-responsive" src="@Url.Content("~/assets/images/压缝球施工.jpg")" alt="image">
+                                            <div class="mu-filter-item-content">
+                                                <h4 class="mu-filter-item-title">这种方法更便捷、省时省力，大面积施工请选择该方法。此方法适合表面光滑的瓷砖，建议施工前进行小面积尝试</h4>
+                                                <span class="fa fa-long-arrow-right"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="4">
+                                        <a class="mu-imglink" href="@Url.Content("~/assets/images/美纹纸施工.jpg")" title="美纹纸施工方法">
+                                            <img class="img-responsive" src="@Url.Content("~/assets/images/美纹纸施工.jpg")" alt="image">
+                                            <div class="mu-filter-item-content">
+                                                <h4 class="mu-filter-item-title">美纹纸施工法此方法虽麻烦一点但效果好。</h4>
+                                                <span class="fa fa-long-arrow-right"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-xs-6 col-sm-6 col-md-4 filtr-item" data-category="5">
+                                        <a class="mu-imglink" href="@Url.Content("~/assets/images/注意事项.jpg")" title="注意事项">
+                                            <img class="img-responsive" src="@Url.Content("~/assets/images/注意事项.jpg")" alt="image">
+                                            <div class="mu-filter-item-content">
+                                                <h4 class="mu-filter-item-title">施工过程中，请查看相关注意事项。</h4>
+                                                <span class="fa fa-long-arrow-right"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Portfolio Content -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Portfolio -->
+
+</main>
+
+<!-- End main content -->

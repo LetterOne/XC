@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewData["Title"] = "留言板";
+
+}
+<!-- End Header -->
+<!-- Start Page Header area -->
+<div id="mu-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mu-page-header-area">
+                    @*<h1 class="mu-page-header-title">留言板</h1>*@
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Header area -->
+<!-- Start Breadcrumb -->
+<div id="mu-breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav aria-label="breadcrumb" role="navigation">
+                    <ol class="breadcrumb mu-breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">主页</a></li>
+                        @*<li class="breadcrumb-item active" aria-current="page">留言板</li>*@
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Breadcrumb -->
+<!-- Start main content -->
+<main>
+    <!-- Start Contact -->
+    <section id="mu-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mu-contact-area">
+                        <!-- Title -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mu-title">
+                                    <h2>留言</h2>
+                                    <p>欢迎给我们留言，我们会及时回复！</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Start Contact Content -->
+                        <div class="mu-contact-content">
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <div class="mu-contact-form-area">
+                                        <div id="form-messages"></div>
+                                        <form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
+
+                                            <div class="form-group">
+                                                <span class="fa fa-user mu-contact-icon"></span>
+                                                <input type="text" class="form-control" placeholder="姓名" id="name" name="name" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <span class="fa fa-pencil-square-o mu-contact-icon"></span>
+                                                <textarea class="form-control" placeholder="留言内容" id="message" name="message" required></textarea>
+                                            </div>
+                                            <button type="submit" class="mu-send-msg-btn"><span>提交</span></button>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End Contact Content -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+    <!-- Google map -->
+    @*<div id="mu-google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.8176744277202!2d-81.47150788457147!3d28.424757900613237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e77e378ec5a9a9%3A0x2feec9271ed22c5b!2sOrange+County+Convention+Center!5e0!3m2!1sen!2sbd!4v1503833952781" width="850" height="400" allowfullscreen></iframe>
+    </div>*@
+
+
+</main>
+
+<!-- End main content -->
