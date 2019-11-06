@@ -32,14 +32,7 @@ function getData() {
             $.each(data, function (key, item) {
                 const tr = $("<tr></tr>")
                     .append(
-                        $("<td></td>").append(
-                            $("<input/>", {
-                                type: "checkbox",
-                                disabled: true,
-                                checked: item.isComplete
-                            })
-                        )
-                    )
+                    $("<td></td>").append($("<td></td>").text(item.PassWord)))
                     .append($("<td></td>").text(item.name))
                     .append(
                         $("<td></td>").append(
@@ -66,7 +59,7 @@ function getData() {
 function addItem() {
     const item = {
         name: $("#add-name").val(),
-        isComplete: false
+        PassWord: "123456"
     };
 
     $.ajax({
