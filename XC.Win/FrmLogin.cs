@@ -21,16 +21,15 @@ namespace XC.Win
 
         private void btnOldaSyc_Click(object sender, EventArgs e)
         {
-            Task task = new Task(()=> {
+         
                 if (txtName.Text.ToUpper().Equals("ADMIN")&&txtPWD.Text.Equals("123456"))
                 {
                     MessageBox.Show("系统正在登录中");
                     this.Dispose();
                     //FrmMain frm = new FrmMain();
                     //frm.ShowDialog();
-                }
-            });
-            task.Start();
+                }     
+           // task.Start();
             
         }
 

@@ -5,16 +5,14 @@ using System.Threading.Tasks;
 
 namespace XC.WebAPI.Models
 {
-    public class BookstoreDatabaseSettings : IBookstoreDatabaseSettings
+    public class MongoDBSettings : IMongoDatabaseSettings
     {
-        public string BooksCollectionName { get; set; }
         public string ConnectionString { get; set; }
         public string DatabaseName { get; set; }
     }
 
-    public interface IBookstoreDatabaseSettings
+    public interface IMongoDatabaseSettings
     {
-        string BooksCollectionName { get; set; }
         string ConnectionString { get; set; }
         string DatabaseName { get; set; }
     }

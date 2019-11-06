@@ -9,9 +9,9 @@ namespace BooksApi.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
-        private readonly BookService _bookService;
+        private readonly MongoDbBaseService<Book> _bookService;
 
-        public BooksController(BookService bookService)
+        public BooksController(MongoDbBaseService<Book> bookService)
         {
             _bookService = bookService;
         }
