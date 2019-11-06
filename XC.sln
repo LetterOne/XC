@@ -19,11 +19,33 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XC.UnitTest", "XC.UnitTest\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XC.ConsoleApp", "XC.ConsoleApp\XC.ConsoleApp.csproj", "{AABD984E-DDCE-4EEA-9FA3-693A05455AFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicPlayer", "D:\360极速浏览器下载\MusicPlayer\MusicPlayer\MusicPlayer.csproj", "{55FFAF9F-BC01-46E5-868A-125FEE5BF328}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XC.ConsoleRecvApp", "XC.ConsoleRecvApp\XC.ConsoleRecvApp.csproj", "{594D3480-D98D-42BB-A413-8C0D567D08E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XC.WebAPI", "XC.WebAPI\XC.WebAPI.csproj", "{BD81CE44-E59B-4B1C-A06D-6FB21F9A8360}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XC.WebAPI", "XC.WebAPI\XC.WebAPI.csproj", "{BD81CE44-E59B-4B1C-A06D-6FB21F9A8360}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebApp", "WebApp\", "{BE18D1D8-0682-4B2B-B3BF-928ADD216759}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_22452"
+		Debug.AspNetCompiler.PhysicalPath = "WebApp\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_22452\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_22452"
+		Release.AspNetCompiler.PhysicalPath = "WebApp\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_22452\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "22452"
+		SlnRelativePath = "WebApp\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XC.SignalRChat", "XC.SignalRChat\XC.SignalRChat.csproj", "{54C0A8E7-1F24-4B55-A0A1-5C04D77756D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,10 +85,6 @@ Global
 		{AABD984E-DDCE-4EEA-9FA3-693A05455AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AABD984E-DDCE-4EEA-9FA3-693A05455AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AABD984E-DDCE-4EEA-9FA3-693A05455AFE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{55FFAF9F-BC01-46E5-868A-125FEE5BF328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55FFAF9F-BC01-46E5-868A-125FEE5BF328}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55FFAF9F-BC01-46E5-868A-125FEE5BF328}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55FFAF9F-BC01-46E5-868A-125FEE5BF328}.Release|Any CPU.Build.0 = Release|Any CPU
 		{594D3480-D98D-42BB-A413-8C0D567D08E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{594D3480-D98D-42BB-A413-8C0D567D08E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{594D3480-D98D-42BB-A413-8C0D567D08E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -75,6 +93,14 @@ Global
 		{BD81CE44-E59B-4B1C-A06D-6FB21F9A8360}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD81CE44-E59B-4B1C-A06D-6FB21F9A8360}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD81CE44-E59B-4B1C-A06D-6FB21F9A8360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE18D1D8-0682-4B2B-B3BF-928ADD216759}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE18D1D8-0682-4B2B-B3BF-928ADD216759}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE18D1D8-0682-4B2B-B3BF-928ADD216759}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE18D1D8-0682-4B2B-B3BF-928ADD216759}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{54C0A8E7-1F24-4B55-A0A1-5C04D77756D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C0A8E7-1F24-4B55-A0A1-5C04D77756D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C0A8E7-1F24-4B55-A0A1-5C04D77756D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C0A8E7-1F24-4B55-A0A1-5C04D77756D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
