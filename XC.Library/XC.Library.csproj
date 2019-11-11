@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="Lucene.Net" Version="4.8.0-beta00006" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Redis" Version="2.2.0" />
     <PackageReference Include="NLog.RabbitMQCore" Version="1.0.2" />
     <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="2.19.3" />
     <PackageReference Include="Polly" Version="7.1.0" />

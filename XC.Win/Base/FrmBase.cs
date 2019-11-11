@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using XC.Win.Base;
 
-namespace XC.Win
+namespace XC.Win.Base
 {
     public partial class FrmBase : XC.Win.Base.FrmBsaeDiolog
     {

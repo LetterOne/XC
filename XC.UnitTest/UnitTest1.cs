@@ -9,6 +9,7 @@ namespace XC.UnitTest
         [TestMethod]
         public void TestMethod1()
         {
+
         }
     }
 }

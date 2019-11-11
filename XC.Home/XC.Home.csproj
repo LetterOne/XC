@@ -8,6 +8,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Context\**" />
+    <Compile Remove="Templete\**" />
+    <Compile Remove="UpLoadFiles\**" />
+    <Content Remove="Context\**" />
+    <Content Remove="Templete\**" />
+    <Content Remove="UpLoadFiles\**" />
+    <EmbeddedResource Remove="Context\**" />
+    <EmbeddedResource Remove="Templete\**" />
+    <EmbeddedResource Remove="UpLoadFiles\**" />
+    <None Remove="Context\**" />
+    <None Remove="Templete\**" />
+    <None Remove="UpLoadFiles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Common\XMLHelpercs.cs" />
   </ItemGroup>
 
@@ -16,12 +31,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
     <PackageReference Include="MongoDB.Driver" Version="2.9.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Templete\" />
-    <Folder Include="UpLoadFiles\" />
-    <Folder Include="Context\" />
   </ItemGroup>
 
   <ItemGroup>

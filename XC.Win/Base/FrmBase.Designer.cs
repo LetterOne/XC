@@ -1,4 +1,4 @@
-﻿namespace XC.Win
+﻿namespace XC.Win.Base
 {
     partial class FrmBase
     {
