@@ -8,10 +8,11 @@ namespace XC.WebAPI.Models
     /// <summary>
     /// 用户信息类 
     /// </summary>
-    public class Sys_User
+    public class Sys_User:BaseFlowModel
     {
-        public long Id { get; set; }
         public string Name { get; set; }
         public string PassWord { get; set; }
+        public string DepartMent { get; set; }
+       
     }
 }

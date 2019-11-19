@@ -8,6 +8,10 @@ namespace XC.WebAPI.Context
     /// </summary>
     public class XCContext:DbContext
     {
+        public XCContext()
+        {
+        }
+
         public XCContext(DbContextOptions<XCContext> options)
          : base(options)
         {

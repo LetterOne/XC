@@ -25,7 +25,7 @@ namespace XC.WebAPI
             services.AddSingleton<IMongoDatabaseSettings>(sp =>sp.GetRequiredService<IOptions<MongoDBSettings>>().Value);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddTransient<MongoDbBaseService<BaseFlowModel>>();
-            // services.AddControllers();
+           // services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

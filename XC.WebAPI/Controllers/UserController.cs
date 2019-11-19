@@ -52,7 +52,7 @@ namespace XC.WebAPI.Controllers
             return CreatedAtAction(nameof(GetUserItem), new { id = user.Id }, user);
         }
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTodoItem(long id, Sys_User user)
+        public async Task<IActionResult> PutTodoItem(string id, Sys_User user)
         {
             if (id != user.Id)
             {
