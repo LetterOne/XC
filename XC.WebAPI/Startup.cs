@@ -24,7 +24,7 @@ namespace XC.WebAPI
             services.Configure<MongoDBSettings>(Configuration.GetSection(nameof(MongoDBSettings)));
             services.AddSingleton<IMongoDatabaseSettings>(sp =>sp.GetRequiredService<IOptions<MongoDBSettings>>().Value);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddTransient<MongoDbBaseService<BaseFlowModel>>();
+            services.AddSingleton<MongoDbBaseService<BaseFlowModel>>();
             // services.AddControllers();
         }
 
