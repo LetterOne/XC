@@ -21,23 +21,48 @@ namespace XC.Win
 
         private void btnOldaSyc_Click(object sender, EventArgs e)
         {
-         
-                if (txtName.Text.ToUpper().Equals("ADMIN")&&txtPWD.Text.Equals("123456"))
+//#if DEBUG
+//            this.DialogResult = DialogResult.OK;
+//            return;
+//#endif
+
+            this.Enabled = false;
+            btnLogin.Text = "登录中";
+            Application.DoEvents();
+            //此处写登录判断逻辑，可调用RPC或其他登录验证方式，这里写个简单判断，用Admin登录
+            try
+            {
+
+                if (txtName.Text.Trim().ToUpper().Equals("ADMIN") && txtPWD.Text.Equals("123456"))
                 {
-                    MessageBox.Show("系统正在登录中");
-                    this.Dispose();
-                    //FrmMain frm = new FrmMain();
-                    //frm.ShowDialog();
-                }     
-           // task.Start();
-            
+                    btnLogin.Text = "登录成功";
+                    this.DialogResult = DialogResult.OK;
+                }
+                else if(string.IsNullOrEmpty(txtName.Text)||string.IsNullOrEmpty(txtPWD.Text))
+                {
+                    MessageBox.Show("用户名或密码不能为空");
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                // 如果用户名或者密码不正确，也会抛出异常。
+                MessageBox.Show(ex.Message, this.Text, MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+            finally
+            {
+                this.Enabled = true;
+                btnLogin.Text = "登录";
+                Application.DoEvents();
+            }
+
         }
 
 
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
         }
     }
 }

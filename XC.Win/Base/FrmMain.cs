@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/// <summary>
+/// 系统主界面，用来展示各种子页面
+/// </summary>
 namespace XC.Win.Base
 {
     public partial class FrmMain : Form
