@@ -11,9 +11,10 @@ namespace BooksApi.Controllers
     {
         private readonly MongoDbBaseService<Book> _bookService;
 
-        public BooksController(MongoDbBaseService<Book> bookService)
+        private readonly IMongoDatabaseSettings mongoDatabaseSettings = new MongoDBSettings();
+        public BooksController()
         {
-            _bookService = bookService;
+            _bookService = new MongoDbBaseService<Book>(mongoDatabaseSettings);
         }
 
         [HttpGet]
