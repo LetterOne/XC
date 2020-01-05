@@ -8,7 +8,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using XC.Home.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Sqlite;
 namespace XC.Home
 {
     public class Startup
@@ -19,6 +21,7 @@ namespace XC.Home
         }
 
         public IConfiguration Configuration { get; }
+   
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -29,6 +32,8 @@ namespace XC.Home
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+            string connecttext = Configuration.GetConnectionString("MyContext");
+            services.AddDbContext<SqlContext>(options => options.UseSqlite(connecttext));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
